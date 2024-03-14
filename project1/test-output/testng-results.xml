@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-14T16:28:53 IST" name="Suite" finished-at="2024-03-14T16:34:51 IST" duration-ms="357636">
+    <groups>
+    </groups>
+    <test started-at="2024-03-14T16:28:53 IST" name="Test" finished-at="2024-03-14T16:34:51 IST" duration-ms="357636">
+      <class name="SeleniumDemo.project1.CodecPolicySuite">
+        <test-method signature="AddMultipleDeleteAll()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:28:54 IST" name="AddMultipleDeleteAll" finished-at="2024-03-14T16:29:50 IST" duration-ms="56249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleDeleteAll -->
+        <test-method signature="AddMultipleDeleteFew()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:29:50 IST" name="AddMultipleDeleteFew" finished-at="2024-03-14T16:31:21 IST" duration-ms="91323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleDeleteFew -->
+        <test-method signature="CodecWithEmptyName()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:31:21 IST" name="CodecWithEmptyName" finished-at="2024-03-14T16:32:04 IST" duration-ms="43378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodecWithEmptyName -->
+        <test-method signature="CopyAndSaveCodec()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:32:04 IST" name="CopyAndSaveCodec" finished-at="2024-03-14T16:33:06 IST" duration-ms="61493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CopyAndSaveCodec -->
+        <test-method signature="EnterCodecAndPressBack()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:33:06 IST" name="EnterCodecAndPressBack" finished-at="2024-03-14T16:33:56 IST" duration-ms="49583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCodecAndPressBack -->
+        <test-method signature="addEditDel()[pri:0, instance:SeleniumDemo.project1.CodecPolicySuite@3cebbb30]" started-at="2024-03-14T16:33:56 IST" name="addEditDel" finished-at="2024-03-14T16:34:51 IST" duration-ms="55535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEditDel -->
+      </class> <!-- SeleniumDemo.project1.CodecPolicySuite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
