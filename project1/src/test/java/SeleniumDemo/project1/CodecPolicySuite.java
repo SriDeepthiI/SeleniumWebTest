@@ -144,6 +144,27 @@ public void AddMultipleDeleteFew() throws InterruptedException {
         cp.logOut(driver);
     }
 }
+@Test
+public void SearchCodecPolicy() throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+    CodecPolicy cp = new CodecPolicy();
+    try {
+        cp.signIN(driver);
+        cp.configuration(driver);
+        cp.addMultiplePolicies(driver, "policy", "AMR", "G729", 2);
+       boolean search = cp.searchPolicy(driver,"policy0");
+       assert search;
+    }
+    catch (InterruptedException e) {
+        System.out.println(e);
+    }
+    finally {
+        cp.cleanUp(driver);
+        cp.logOut(driver);
+    }
+}
 }
 
 

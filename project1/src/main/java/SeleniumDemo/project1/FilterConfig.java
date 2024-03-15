@@ -64,7 +64,9 @@ public class FilterConfig extends Base {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement checkBox = driver.findElement(By.xpath("//oj-selector[@id='filter-config1_table_selector_" + nameOfFilterConfig + "']//input[@type='checkbox']"));
         checkBox.click();
+        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("filter-config1_deleteAction"))).click();
+        Thread.sleep(2000);
         WebElement confirm = driver.findElement(By.xpath("//oj-button[@id='dialogConfirmBtn']//span[contains(text(),'Confirm')]"));
         confirm.click();
         Thread.sleep(2000);

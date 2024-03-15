@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite">
+
+<suite name="FilterConfigSuite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SeleniumDemo.project1.CodecPolicySuite"/>
+      <class name="SeleniumDemo.project1.FilterConfigSuite"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- RealMSuite -->

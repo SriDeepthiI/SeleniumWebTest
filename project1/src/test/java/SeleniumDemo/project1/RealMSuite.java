@@ -8,7 +8,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class RealMSuiteTest {
+public class RealMSuite {
   @Test
   public void AddMultipleDeleteAll()throws InterruptedException {
 	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
@@ -133,6 +133,26 @@ public class RealMSuiteTest {
           assert deleteSelective;
           Thread.sleep(2000);
       } catch (InterruptedException e) {
+          System.out.println(e);
+      } finally {
+          rm.cleanUp(driver);
+          rm.logOut(driver);
+      }
+  }
+  @Test
+  public void SearchRealM()throws InterruptedException  {
+	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
+      WebDriver driver = new ChromeDriver();
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+      RealM rm = new RealM();
+      try {
+          rm.signIN(driver);
+          rm.configuration(driver);
+          rm.addRealM(driver, "realm1", 80, 30);
+          boolean searchRealM = rm.searchRealM(driver, "realm2");
+          assert searchRealM;
+      }
+      catch (InterruptedException e) {
           System.out.println(e);
       } finally {
           rm.cleanUp(driver);

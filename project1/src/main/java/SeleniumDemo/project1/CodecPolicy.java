@@ -181,11 +181,13 @@ public class CodecPolicy extends Base{
                 System.out.println("All selected policies deleted successfully.");
                 return true;
             }
-            public boolean searchPolicy(WebDriver driver,String policyName) {
+            public boolean searchPolicy(WebDriver driver,String policyName) throws InterruptedException {
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
                 WebElement search = driver.findElement(By.xpath("//input[@id='searchid|input']"));
                 search.sendKeys(policyName);
+                Thread.sleep(2000);
                 driver.findElement(By.id("tableSearchButton")).click();
+                Thread.sleep(2000);
                 WebElement emptyDataIcons = driver.findElement(By.xpath("//div[@id='codec-policy1_emptyDataIcons']"));
                 if (emptyDataIcons.isDisplayed()) {
                     System.out.println("Policy '" + policyName + "' is Not Available");
