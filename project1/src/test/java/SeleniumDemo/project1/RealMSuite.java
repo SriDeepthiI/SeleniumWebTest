@@ -150,7 +150,7 @@ public class RealMSuite {
           rm.configuration(driver);
           rm.addRealM(driver, "realm1", 80, 30);
           boolean searchRealM = rm.searchRealM(driver, "realm2");
-          assert searchRealM;
+          assert !searchRealM;
       }
       catch (InterruptedException e) {
           System.out.println(e);

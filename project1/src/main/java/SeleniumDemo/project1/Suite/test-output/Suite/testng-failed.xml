@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="SeleniumDemo.project1.CodecPolicySuite">
+      <class name="SeleniumDemo.project1.MediaProfileSuite">
         <methods>
-          <include name="SearchCodecPolicy"/>
+          <include name="EnterMediaProfileAndPressBack"/>
         </methods>
-      </class> <!-- SeleniumDemo.project1.CodecPolicySuite -->
+      </class> <!-- SeleniumDemo.project1.MediaProfileSuite -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
