@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-15T18:48:43 IST" name="Failed suite [Failed suite [RealMSuite]]" finished-at="2024-03-15T18:49:36 IST" duration-ms="52663">
+  <suite started-at="2024-03-20T10:19:31 IST" name="Failed suite [Failed suite [RealMSuite]]" finished-at="2024-03-20T10:21:25 IST" duration-ms="114294">
     <groups>
     </groups>
-    <test started-at="2024-03-15T18:48:43 IST" name="Test(failed)(failed)" finished-at="2024-03-15T18:49:36 IST" duration-ms="52663">
-      <class name="SeleniumDemo.project1.RealMSuite">
-        <test-method signature="SearchRealM()[pri:0, instance:SeleniumDemo.project1.RealMSuite@1b11171f]" started-at="2024-03-15T18:48:43 IST" name="SearchRealM" finished-at="2024-03-15T18:49:36 IST" duration-ms="52602" status="PASS">
+    <test started-at="2024-03-20T10:19:31 IST" name="Test(failed)(failed)" finished-at="2024-03-20T10:21:25 IST" duration-ms="114294">
+      <class name="SeleniumDemo.project1.SteeringPoolSuite">
+        <test-method signature="enterEmptySP()[pri:0, instance:SeleniumDemo.project1.SteeringPoolSuite@1151e434]" started-at="2024-03-20T10:19:31 IST" name="enterEmptySP" finished-at="2024-03-20T10:21:25 IST" duration-ms="114213" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchRealM -->
-      </class> <!-- SeleniumDemo.project1.RealMSuite -->
+        </test-method> <!-- enterEmptySP -->
+      </class> <!-- SeleniumDemo.project1.SteeringPoolSuite -->
     </test> <!-- Test(failed)(failed) -->
   </suite> <!-- Failed suite [Failed suite [RealMSuite]] -->
 </testng-results>

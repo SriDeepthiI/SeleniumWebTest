@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [RealMSuite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)(failed)">
+<suite name="Failed suite [RealMSuite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="SeleniumDemo.project1.SteeringPoolSuite">
         <methods>
+          <include name="CopyAndSave"/>
           <include name="enterEmptySP"/>
         </methods>
       </class> <!-- SeleniumDemo.project1.SteeringPoolSuite -->
     </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [RealMSuite]] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RealMSuite] -->
