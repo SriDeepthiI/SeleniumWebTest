@@ -3,11 +3,11 @@
 <suite name="Failed suite [Failed suite [RealMSuite]]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)(failed)">
     <classes>
-      <class name="SeleniumDemo.project1.SteeringPoolSuite">
+      <class name="SeleniumDemo.project1.TLSProfileSuite">
         <methods>
-          <include name="enterEmptySP"/>
+          <include name="addMultipleDeleteFew"/>
         </methods>
-      </class> <!-- SeleniumDemo.project1.SteeringPoolSuite -->
+      </class> <!-- SeleniumDemo.project1.TLSProfileSuite -->
     </classes>
   </test> <!-- Test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [RealMSuite]] -->

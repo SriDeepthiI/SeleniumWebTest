@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RealMSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="SeleniumDemo.project1.TLSProfileSuite"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- RealMSuite -->
