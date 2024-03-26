@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="LocalPolicySuite">
+  <test thread-count="5" name="LocalPolicyTest">
+    <classes>
+      <class name="SeleniumDemo.project1.LocalPolicySuite"/>
+    </classes>
+  </test> <!-- LocalPolicyTest -->
+</suite> <!-- LocalPolicySuite -->

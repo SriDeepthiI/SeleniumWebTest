@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SIPInterfaceSuite">
+  <test thread-count="5" name="SIPINterface">
+    <classes>
+      <class name="SeleniumDemo.project1.SIPInterfaceSuite"/>
+    </classes>
+  </test> <!-- SIPINterface -->
+</suite> <!-- SIPInterfaceSuite -->

@@ -68,6 +68,7 @@ public class LocalPolicy extends Base {
         toInput.sendKeys(" " + newToAddress);
         Thread.sleep(2000);
         driver.findElement(By.xpath(xpathOkButton)).click();
+        Thread.sleep(2000);
         WebElement element1 = driver.findElement(By.xpath("//*[contains(text(), '" + newToAddress + "')]"));
         if (element1 == null) {
             System.out.println("Error in Editing" + newToAddress + " ");

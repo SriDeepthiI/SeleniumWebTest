@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T16:00:48 IST" name="Failed suite [SessionAgentSuite]" finished-at="2024-03-26T16:04:39 IST" duration-ms="230682">
+  <suite started-at="2024-03-26T21:20:21 IST" name="Failed suite [SIPInterfaceSuite]" finished-at="2024-03-26T21:24:15 IST" duration-ms="233421">
     <groups>
     </groups>
-    <test started-at="2024-03-26T16:00:48 IST" name="Test(failed)" finished-at="2024-03-26T16:04:39 IST" duration-ms="230682">
-      <class name="SeleniumDemo.project1.SessionAgentSuite">
-        <test-method signature="EnterSessionAgentAndPressBack()[pri:0, instance:SeleniumDemo.project1.SessionAgentSuite@1151e434]" started-at="2024-03-26T16:00:48 IST" name="EnterSessionAgentAndPressBack" finished-at="2024-03-26T16:02:13 IST" duration-ms="85100" status="PASS">
+    <test started-at="2024-03-26T21:20:21 IST" name="SIPINterface(failed)" finished-at="2024-03-26T21:24:15 IST" duration-ms="233421">
+      <class name="SeleniumDemo.project1.SIPInterfaceSuite">
+        <test-method signature="addEditDelete()[pri:0, instance:SeleniumDemo.project1.SIPInterfaceSuite@1b11171f]" started-at="2024-03-26T21:20:22 IST" name="addEditDelete" finished-at="2024-03-26T21:22:13 IST" duration-ms="111747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnterSessionAgentAndPressBack -->
-        <test-method signature="AddMultipleDeleteAll()[pri:0, instance:SeleniumDemo.project1.SessionAgentSuite@1151e434]" started-at="2024-03-26T16:02:13 IST" name="AddMultipleDeleteAll" finished-at="2024-03-26T16:04:39 IST" duration-ms="145491" status="PASS">
+        </test-method> <!-- addEditDelete -->
+        <test-method signature="AddMultipleDeleteAll()[pri:0, instance:SeleniumDemo.project1.SIPInterfaceSuite@1b11171f]" started-at="2024-03-26T21:22:13 IST" name="AddMultipleDeleteAll" finished-at="2024-03-26T21:24:15 IST" duration-ms="121598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddMultipleDeleteAll -->
-      </class> <!-- SeleniumDemo.project1.SessionAgentSuite -->
-    </test> <!-- Test(failed) -->
-  </suite> <!-- Failed suite [SessionAgentSuite] -->
+      </class> <!-- SeleniumDemo.project1.SIPInterfaceSuite -->
+    </test> <!-- SIPINterface(failed) -->
+  </suite> <!-- Failed suite [SIPInterfaceSuite] -->
 </testng-results>

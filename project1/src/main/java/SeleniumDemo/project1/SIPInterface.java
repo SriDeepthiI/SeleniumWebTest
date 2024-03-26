@@ -24,15 +24,10 @@ public class SIPInterface extends Base{
     public boolean addSipInterface(WebDriver driver, String SIPInterface) throws InterruptedException {
         driver.findElement(By.xpath("//span[normalize-space()='session-router']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'sip-interface')]")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='sip-interface']")).click();
         driver.findElement(By.xpath(xpathIntialAdd)).click();
         WebElement input = driver.findElement(By.xpath("//input[@id='realm-id|input']"));
         input.sendKeys(SIPInterface);
-//        driver.findElement(By.xpath("//oj-select-single[@id='nat-traversal']//a[@role='presentation']")).click();
-//        Thread.sleep(2000);
-//        WebElement always = driver.findElement(By.xpath("//li[@id='ui-id-457']"));
-//        always.click();
-//        driver.findElement(By.xpath("//input[@id='ui-id-442|cb']")).click();
         driver.findElement(By.xpath(xpathOKButton)).click();
         WebElement element = driver.findElement(By.xpath("//*[contains(text(), '" + SIPInterface + "')]"));
         if (element != null) {
@@ -47,9 +42,12 @@ public class SIPInterface extends Base{
     public boolean cleanup(WebDriver driver) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         try {
-            driver.findElement(By.xpath("//span[normalize-space()='sip-feature']")).click();
+            WebElement sipFeature = driver.findElement(By.xpath("//span[normalize-space()='sip-feature']"));
+            sipFeature.click();
             Thread.sleep(2000);
-            driver.findElement(By.xpath("//span[normalize-space()='sip-interface']")).click();
+            WebElement sipInterface = driver.findElement(By.xpath("//span[normalize-space()='sip-interface']"));
+            sipInterface.click();
+            Thread.sleep(2000);
             if (driver.findElement(By.xpath(xpathIntialAdd)).isDisplayed()) {
                 System.out.println("SIP CleanUp Done");
                 Thread.sleep(2000);
@@ -59,9 +57,11 @@ public class SIPInterface extends Base{
                 Thread.sleep(2000);
                 System.out.println("SIP Cleanup Done.");
             }
-            driver.findElement(By.xpath("//a[@title='media-manager group']//span[@class='oj-navigationlist-item-label'][normalize-space()='media-manager']")).click();
-            Thread.sleep(2000);
-            driver.findElement(By.xpath("//span[normalize-space()='realm-config']")).click();
+//            WebElement mediaManger = driver.findElement(By.xpath("//a[@title='media-manager group']//span[@class='oj-navigationlist-item-label'][normalize-space()='media-manager']"));
+//            mediaManger.click();
+           // Thread.sleep(2000);
+            WebElement realM = driver.findElement(By.xpath("//span[normalize-space()='realm-config']"));
+            realM.click();
             Thread.sleep(2000);
             if (driver.findElement(By.xpath("//button[@aria-label='Realm Config Add']//span[@class='oj-button-text']")).isDisplayed()) {
                 System.out.println("RealM CleanUp Done");
@@ -133,7 +133,7 @@ public class SIPInterface extends Base{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.findElement(By.xpath("//span[normalize-space()='session-router']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'sip-interface')]")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='sip-interface']")).click();
         Thread.sleep(2000);
             for (int i =0; i <= n; i++) {
                 if (i == 0) {
@@ -210,7 +210,7 @@ public class SIPInterface extends Base{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.findElement(By.xpath("//span[normalize-space()='session-router']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'sip-interface')]")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='sip-interface']")).click();
         driver.findElement(By.xpath(xpathIntialAdd)).click();
         WebElement input = driver.findElement(By.xpath("//input[@id='realm-id|input']"));
         input.sendKeys(nameOfSIP);
@@ -253,7 +253,7 @@ public class SIPInterface extends Base{
     public void sIPWithEmptyName(WebDriver driver) throws InterruptedException {
         driver.findElement(By.xpath("//span[normalize-space()='session-router']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[contains(text(),'sip-interface')]")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='sip-interface']")).click();
         driver.findElement(By.xpath(xpathIntialAdd)).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath(xpathOKButton)).click();
