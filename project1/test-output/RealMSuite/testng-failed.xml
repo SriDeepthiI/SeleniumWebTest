@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RealMSuite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="SeleniumDemo.project1.TLSProfileSuite">
+        <methods>
+          <include name="addMultipleDeleteFew"/>
+          <include name="search"/>
+          <include name="addMultipleDeleteAll"/>
+        </methods>
+      </class> <!-- SeleniumDemo.project1.TLSProfileSuite -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RealMSuite] -->
