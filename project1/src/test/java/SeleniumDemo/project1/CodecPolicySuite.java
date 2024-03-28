@@ -1,6 +1,7 @@
 package SeleniumDemo.project1;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import java.time.Duration;
 import org.openqa.selenium.*;
@@ -39,7 +40,7 @@ public class CodecPolicySuite {
           cp.logOut(driver);
       }  
   }
-  @Test
+     @Test
 public void CopyAndSaveCodec() throws InterruptedException {
 	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
      WebDriver driver = new ChromeDriver();

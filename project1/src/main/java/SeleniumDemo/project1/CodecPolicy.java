@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CodecPolicy extends Base{
+	
     String xpathConfiguration = "//span[@class='oj-navigationlist-item-label'][normalize-space()='Configuration']";
     String xpathCodecPolicy = "//a[contains(text(),'codec-policy')]";
     String xpathIntialAdd = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/oj-module[1]/div[1]/div[7]/oj-module[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]/oj-module[1]/div[1]/div[3]/div[1]/div[1]/div[3]/div[1]/div[2]/oj-button[1]/button[1]/div[1]/span[1]";
